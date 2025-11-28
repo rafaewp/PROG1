@@ -1,0 +1,13 @@
+# Faça um programa para calcular a série de Fibonacci para um número informado pelo usuário, sendo F(0) = 0, F(1) = 1 e
+# F(n) = F(n-1)+F(n-2). Por exemplo, caso o usuário informe o número 9, o resultado seria: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34.
+
+N = int(input('Digite um número! --> '))
+
+a, b = 0, 1
+print(a, b, end=' ')
+
+for i in range(2, N+1):
+    c = a + b
+    print(c, end= ' ')
+    a = b
+    b = c
